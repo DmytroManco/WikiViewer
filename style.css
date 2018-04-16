@@ -1,0 +1,87 @@
+:root{
+    --colorWhite: #fff;
+    --colorCobalt: #607d8b;
+    --fontMainColor: #fffbfb;
+    --grayColor: #ccc;
+    --colorGreen: #bada55;
+    --colorDarkGray: #565757;
+    --colorBlue: #0e8dbc;
+    --colorRed: #BC0026;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--colorCobalt);
+    color: var(--fontMainColor);
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.controls {
+    text-align: center;
+}
+
+.controls input {
+    background: transparent;
+    border: 1px solid var(--grayColor);
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    color: var(--colorWhite);
+}
+
+.controls .btn {
+    min-width: 5rem;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    color: var(--colorWhite);
+}
+
+.controls .btn--search {
+    background: var(--colorGreen);
+}
+
+.controls .btn--reset {
+    background: var(--colorRed);
+}
+
+.controls .btn:active {
+    filter: grayscale(100%);
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.articles {
+}
+
+.articles > div {
+    margin: 10px 0;
+    border-left: 3px solid var(--colorGreen);
+    padding: 10px;
+    background: var(--colorBlue);
+    box-shadow: 5px 5px 5px 0 var(--colorDarkGray);
+}
+
+.articles > div p {
+    padding: 10px 0;
+}
+
+.articles > div a {
+    text-align: right;
+    display: block;
+}
